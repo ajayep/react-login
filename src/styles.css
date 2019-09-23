@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+:root {
+  --h3-color: #545659;
+}
+body {
+  margin: 0;
+}
+.wrapper {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #edeff2;
+  font-family: "Roboto Mono", monospace;
+}
+h3 {
+  font-size: 30px;
+  color: var(--h3-color);
+  margin-left: 200px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.main-content {
+  width: 100%;
+  max-width: 500px;
+  min-width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  background: white;
+  box-shadow: -1px 3px 5px 6px rgba(230, 228, 228, 0.86);
+  -webkit-box-shadow: -1px 3px 5px 6px rgba(230, 228, 228, 0.86);
+  -moz-box-shadow: -1px 3px 5px 6px rgba(230, 228, 228, 0.86);
+}
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.log-in {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 10px;
+  margin: 0 0px 10px 0;
+  justify-content: center;
+}
+
+label {
+  margin-left: 20px;
+  font-size: 20px;
+  margin-top: 15px;
+  color: var(--h3-color);
+}
+
+input {
+  outline: 0;
+  padding: 15px;
+  border: 0;
+  font-size: 18px;
+  color: #434444;
+  background: #edeff2;
+  margin-top: 10px;
+  border-radius: 30px;
+}
+
+input:focus {
+  color: black;
+  background: #e1e3e8;
+}
+
+button {
+  border-radius: 10px;
+  max-width: 100px;
+  border: 0;
+  margin-top: 15px;
+  margin-left: 200px;
+  background: #094887;
+  padding: 10px 15px;
+  color: white;
+  outline: 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* button:disabled {
+  color: gray;
+} */
+button:hover {
+  background: #011e3a;
+  transition: background ease-in-out 0.5s;
+}
+/* button:focus {
+  outline: 0;
+  color: black;
+} */
+
+button[disabled]:active,
+button[disabled]:hover,
+button[disabled],
+input[type="button"][disabled]:active,
+input[type="submit"][disabled]:active,
+input[type="button"][disabled],
+input[type="submit"][disabled],
+input[type="button"][disabled]:hover,
+input[type="submit"][disabled]:hover {
+  border: 0;
+  color: GrayText;
+  cursor: inherit;
+  background-color: #ddd;
+  background: #ddd;
+}
