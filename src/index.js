@@ -9,6 +9,7 @@ import {
 import axios from "axios";
 import Noty from "noty";
 import "noty/lib/noty.css";
+import "noty/lib/themes/nest.css";
 
 // my components
 import SignIn from "./components/SignIn";
@@ -41,10 +42,9 @@ class App extends Component {
         console.log(res);
         new Noty({
           text: "This is a " + res.data + " notification!",
-          layout: "topLeft",
-          theme: "mint",
+          theme: "nest",
           type: "success",
-          timeout: 20
+          timeout: 2000
         }).show();
         this.setState({
           userID: "",
@@ -56,10 +56,9 @@ class App extends Component {
         console.log(err);
         new Noty({
           text: "Error in API!",
-          layout: "top",
-          theme: "mint",
+          theme: "nest",
           type: "error",
-          timeout: 20
+          timeout: 2000
         }).show();
         this.setState({
           userID: "",
